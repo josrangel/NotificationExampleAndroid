@@ -13,14 +13,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    NotificationCreator notificationCreator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        notificationCreator = new NotificationCreator(this);
     }
 
     public void createNotification(View v){
-        NotificationCreator notificationCreator = new NotificationCreator(this);
         notificationCreator.createNotification(this, "Notification Created", "Hi, I'm a notification. I love you \uD83D\uDE18");
     }
 }
