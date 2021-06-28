@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * Tutorial
  * https://developer.android.com/training/notify-user/build-notification
  * https://openwebinars.net/blog/como-hacer-notificaciones-push-en-android-facil/
+ * https://stackoverflow.com/questions/51685489/purpose-of-notificationchannel-name-and-description
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createNotification(View v){
-        notificationCreator.createNotification(this, "Notification Created", "Hi, I'm a notification. I love you \uD83D\uDE18");
+        notificationCreator.createNotification("Notification Created", "Hi, I'm a notification. I love you \uD83D\uDE18");
     }
 }
